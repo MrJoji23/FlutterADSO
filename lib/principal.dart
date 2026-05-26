@@ -17,65 +17,114 @@ class ElNombe extends StatelessWidget {
         ),
         body: Center( 
           child: Container(
-            width: 300,
-            height: 300,
+            width: 350,
 
-            margin: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
 
             decoration: BoxDecoration(
-              color: Colors.deepPurpleAccent,
+              color: const Color.fromARGB(193, 140, 194, 124),
               borderRadius: BorderRadius.circular(20),
 
               
             ),
 
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
               //Hijos del contenedor 
               children: [
 
-                Column(
-                  //Centrar elementos de la columna
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  //hijos del contendor
-                  children: [
-                    //hijo 1
                     Icon(
                       Icons.person,
                       color: const Color.fromARGB(255, 0, 0, 0),
-                      size: 50,
+                      size: 100,
                       ),
                       //Hijo 2
-                      Text(
-                        'Homelander', 
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
 
-                    
-                  ],
-                ),
                 //Hijo 2 Column
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+
                   //Hijos del contenedo
                   children: [
-                    //Hijo 1
-                    Icon(
-                      Icons.phone,
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      size: 50,
+                    Row(
+                      children: [
+                        SizedBox(height: 20,),
+                        Text(
+                          'JUAN PEREZ',
+                          style: TextStyle(
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 25,
+                          ),
+                        ),
+                      ],
                     ),
-                    //Hijo 2
-                    Text(
-                      'Bucher',
-                      style: TextStyle(
-                        color: const Color.fromARGB(255, 255, 255, 255),
-                        fontSize: 20,
-                      ),
-                    )
+                    //Hijo 1
+                    SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.email,
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          size: 20,
+                        ),
+                        Text(
+                          'juanpaa@gmail.com',
+                          style: TextStyle(
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 15,
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.phone,
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          size: 20,
+                        ),
+                        Text(
+                          '300123456',
+                          style: TextStyle(
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+Row(
+                      children: [
+                        Icon(
+                          Icons.phone,
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          size: 20,
+                        ),
+                        Text(
+                          '300123456',
+                          style: TextStyle(
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.location_pin,
+                          color: const Color.fromARGB(255, 0, 0, 0),
+                          size: 20,
+                        ),
+                        Text(
+                          'Bogota',
+                          style: TextStyle(
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 )
               ],
