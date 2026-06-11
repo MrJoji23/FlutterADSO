@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:primerproyecto/cal.dart';
+import 'package:primerproyecto/login.dart';
+
 
 
 //Inputs-Formulario
@@ -20,10 +21,16 @@ import 'package:primerproyecto/cal.dart';
 //  runApp(const Tarjeta());
 //}
 
-void main(){
-  runApp(
-    const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Calculadora())
-  );
+//import 'package:primerproyecto/cal.dart';
+//void main(){
+//  runApp(
+//    const MaterialApp(
+//      debugShowCheckedModeBanner: false,
+//      home: Calculadora())
+//  );
+//}
+
+
+void main() {
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false, home: Login()));
 }
